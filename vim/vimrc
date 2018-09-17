@@ -62,6 +62,7 @@ set pastetoggle=<F8>
 set nowrap
 set textwidth=0             " disable automatic line breaking
 set cursorline
+set cursorcolumn
 
 " tab settings
 set tabstop=4
@@ -90,7 +91,7 @@ set expandtab
 
 " listchars for whitespaces
 set list
-set listchars=tab:»\ ,trail:·,extends:>,precedes:<
+set listchars=tab:쨩\ ,trail:쨌,extends:>,precedes:<
 
 " wildmenu settings
 set wildmenu
@@ -541,7 +542,7 @@ highlight DiffText      guibg=#721b1b guifg=NONE
 
 " no underline, current cursor line
 highlight CursorLine    cterm=none
-
+highlight CursorColumn cterm=none
 " show cursorline for active window only
 augroup NrHighlight
     autocmd!
@@ -1002,8 +1003,8 @@ let g:ale_python_mypy_options = '--ignore-missing-imports'
 let g:ale_echo_msg_format = '[%linter%] %code: %%s'
 
 " better error/warning sign
-let g:ale_sign_error = '✘'
-let g:ale_sign_warning = '⚠'
+let g:ale_sign_error = '??
+let g:ale_sign_warning = '??
 hi ALEErrorSign    gui=bold guifg=#e6645f ctermfg=167
 hi ALEWarningSign  gui=bold guifg=#b1b14d ctermfg=143
 
