@@ -91,7 +91,7 @@ set expandtab
 
 " listchars for whitespaces
 set list
-set listchars=tab:쨩\ ,trail:쨌,extends:>,precedes:<
+set listchars=tab:»\ ,trail:·,extends:>,precedes:<
 
 " wildmenu settings
 set wildmenu
